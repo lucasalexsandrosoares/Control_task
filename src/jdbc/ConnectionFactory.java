@@ -1,6 +1,5 @@
 package jdbc;
-import java.sql.Connection;
-import java.sql.DriverManager;
+import java.sql.*;
 
 // Fábrica de conexão com o Banco de dados
 public class ConnectionFactory {
@@ -12,13 +11,35 @@ public class ConnectionFactory {
     // Obtêm uma nova Conexão
     public Connection getConnection() {
         try {
-            return DriverManager
-                    .getConnection(stringConexao
-                            , usuarioBD, senhaBD);
+            return DriverManager.getConnection(stringConexao, usuarioBD, senhaBD);
         }catch (Exception e) {
             e.printStackTrace();
             throw new RuntimeException();
         }
+    }
+
+    public void ExecSQLSemRetorno(String sql){
+        try {
+            Connection con = getConnection();
+
+            PreparedStatement ps = con.prepareStatement(sql);
+
+            ps.execute();
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+    }
+
+    public ResultSet ExecSQLComRetorno(String sql){
+        try {
+            PreparedStatement ps = getConnection().prepareStatement(sql);
+
+            return ps.executeQuery();
+        } catch (SQLException e){
+            e.printStackTrace();
+        }
+
+        return null;
     }
 
 }
