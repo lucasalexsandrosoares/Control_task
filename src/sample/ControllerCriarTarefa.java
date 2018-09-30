@@ -41,6 +41,5 @@ public class ControllerCriarTarefa extends ConnectionFactory {
 
         new AbreTela().TelaConsultar();
         btnSalvar.getScene().getWindow().hide();
-
     }
 }

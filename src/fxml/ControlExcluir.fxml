@@ -7,15 +7,16 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerExcluir">
+<AnchorPane fx:id="HomeExcluir" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerExcluir">
    <children>
       <MenuBar layoutY="-2.0" prefHeight="23.0" prefWidth="600.0">
          <menus>
             <Menu mnemonicParsing="false">
                <items>
-                  <MenuItem mnemonicParsing="false" text="Criar Tarefa" />
-                  <MenuItem mnemonicParsing="false" text="Consultar Tarefa" />
-                  <MenuItem mnemonicParsing="false" text="Tarefa Fizalizada" />
+                  <MenuItem fx:id="criarTarefa" mnemonicParsing="false" onAction="#handleOnActionCriarTarefa" text="Criar Tarefa" />
+                  <MenuItem fx:id="consultar" mnemonicParsing="false" onAction="#handleOnActionConsultar" text="Consultar Tarefa" />
+                  <MenuItem fx:id="tarefaFinalizada" mnemonicParsing="false" onAction="#handleOnActionTarefaFinalizada" text="Tarefa Fizalizada" />
+                  <MenuItem fx:id="sair" mnemonicParsing="false" onAction="#handleOnActionSair" text="Sair" />
                </items>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">

@@ -37,6 +37,8 @@ public class AbreTela {
 
     public  void TelaExcluir(){AbreTela("fxml/ControlExcluir.fxml","ControlTask - Excluir");}
 
+    public void TelaTarefaFinalizada(){AbreTela("fxml/ControlTarefaFinalizada.fxml","ControlTask - TarefaFinalizada");}
+
     private void AbreTela(String caminho, String titulo){
         // Não alterar //
         try {

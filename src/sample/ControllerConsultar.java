@@ -17,4 +17,18 @@ public class ControllerConsultar{
         new AbreTela().TelaCriarTarefa();
         HomeConsultar.getScene().getWindow().hide();
     }
+
+    public void handleOnActionSair(){
+        new AbreTela().TelaLogin();
+        HomeConsultar.getScene().getWindow().hide();
+    }
+    public void handleOnActionExcluirTarefa(){
+        new AbreTela().TelaExcluir();
+        HomeConsultar.getScene().getWindow().hide();
+    }
+    public void handleOnActionTarefaFinalizada(){
+        new AbreTela().TelaTarefaFinalizada();
+        HomeConsultar.getScene().getWindow().hide();
+    }
+
 }

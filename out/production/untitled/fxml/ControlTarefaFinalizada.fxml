@@ -7,17 +7,17 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 
-<AnchorPane fx:id="HomeConsultar" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerConsultar">
+<AnchorPane fx:id="HomeTarefaFinalizada" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerTarefaFinalizada">
    <children>
       <MenuBar layoutY="-2.0" prefHeight="23.0" prefWidth="600.0">
-        <menus>
-          <Menu mnemonicParsing="false">
-            <items>
-              <MenuItem mnemonicParsing="false" onAction="#handleOnActionCriarTarefa" text="Criar Tarefa" />
-                  <MenuItem fx:id="excluirTarefa" mnemonicParsing="false" onAction="#handleOnActionExcluirTarefa" text="Excluir Tarefa" />
-                  <MenuItem mnemonicParsing="false" onAction="#handleOnActionTarefaFinalizada" text="Tarefa Finalizada" />
+         <menus>
+            <Menu mnemonicParsing="false">
+               <items>
+                  <MenuItem fx:id="criarTarefa" mnemonicParsing="false" onAction="#handleOnActionCriarTarefa" text="Criar Tarefa" />
+                  <MenuItem fx:id="tarefaFinalizada" mnemonicParsing="false" onAction="#handleOnActionExcluirTarefa" text="Excluir Tarefa" />
+                  <MenuItem fx:id="consultar" mnemonicParsing="false" onAction="#handleOnActionConsultar" text="Consultar Tarefa" />
                   <MenuItem fx:id="sair" mnemonicParsing="false" onAction="#handleOnActionSair" text="Sair" />
-            </items>
+               </items>
                <graphic>
                   <ImageView fitHeight="25.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
                      <image>
@@ -25,8 +25,8 @@
                      </image>
                   </ImageView>
                </graphic>
-          </Menu>
-        </menus>
+            </Menu>
+         </menus>
       </MenuBar>
    </children>
 </AnchorPane>
