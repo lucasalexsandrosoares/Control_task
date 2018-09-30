@@ -25,7 +25,7 @@
       <TextField fx:id="txLoginUsuario" layoutX="189.0" layoutY="175.0" prefHeight="25.0" prefWidth="237.0" promptText="Usuário" />
       <PasswordField fx:id="psLoginSenha" layoutX="189.0" layoutY="211.0" prefHeight="25.0" prefWidth="237.0" promptText="Senha" />
       <Button fx:id="entrar" layoutX="189.0" layoutY="246.0" mnemonicParsing="false" onAction="#handleOnActionLoginEntrar" prefHeight="25.0" prefWidth="237.0" text="Entrar" />
-      <Text fx:id="criaConta" layoutX="187.0" layoutY="296.0" onMouseClicked="#onMouseClickedLoginRegistrar" strokeType="OUTSIDE" strokeWidth="0.0" text="Não tem conta? Crie uma" />
-      <Text fx:id="recuperarSenha" layoutX="187.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esquece a senha?" />
+      <Text fx:id="criaConta" layoutX="187.0" layoutY="296.0" onMouseClicked="#onMouseClickedLoginRegistrar" text="Não tem conta? Crie uma" />
+      <Text fx:id="recuperarSenha" layoutX="187.0" layoutY="320.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Esqueceu a senha?" />
    </children>
 </Pane>

@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="HomeConsultar" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerConsultar">
+   <children>
+      <MenuBar layoutY="-2.0" prefHeight="23.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+            <items>
+              <MenuItem mnemonicParsing="false" onAction="#handleOnActionCriarTarefa" text="Criar Tarefa" />
+                  <MenuItem mnemonicParsing="false" text="Excluir Tarefa" />
+                  <MenuItem mnemonicParsing="false" text="Tarefa Finalizada" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="25.0" fitWidth="38.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@menu-button-of-three-horizontal-lines.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</AnchorPane>

@@ -2,6 +2,7 @@ package sample;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
+import javafx.scene.control.Alert;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
@@ -28,13 +29,18 @@ public class ControllerLogin {
 
                     // Abrir tela home //
                     txLoginUsuario.getScene().getWindow().hide();
-                    new AbreTela().TelaRegistrar();
+                    new AbreTela().TelaHome();
                     return;
                     // Abrir tela home //
                 }
             }
 
-            System.out.println("Você errou sua senha ou seu nome. Tente novamente!");
+            Alert alert = new Alert(Alert.AlertType.ERROR);
+            alert.setTitle("Falha ao efetuar login");
+            alert.setHeaderText(null);
+            alert.setContentText("Você errou seu usuário ou sua senha, tente novamente.");
+
+            alert.showAndWait();
         } catch (SQLException e){
             e.printStackTrace();
         }

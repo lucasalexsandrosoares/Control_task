@@ -31,6 +31,12 @@ public class AbreTela {
         AbreTela("fxml/ControlHome.fxml","ControlTask - Inicio");
     }
 
+    public void TelaCriarTarefa(){ AbreTela("fxml/ControlCriarTarefa.fxml", "ControlTask - CriarTarefa");}
+
+    public void TelaConsultar(){AbreTela("fxml/ControlConsultar.fxml","ControlTask - Consultar");}
+
+    public  void TelaExcluir(){AbreTela("fxml/ControlExcluir.fxml","ControlTask - Excluir");}
+
     private void AbreTela(String caminho, String titulo){
         // Não alterar //
         try {

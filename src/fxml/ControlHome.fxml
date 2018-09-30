@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Menu?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Text?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerTelaHome">
+   <children>
+      <ImageView fx:id="criarTarefa" fitHeight="95.0" fitWidth="105.0" layoutX="253.0" layoutY="166.0" onMouseClicked="#criarTarefa" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@addition-button.png" />
+         </image>
+      </ImageView>
+      <Text fx:id="HomeOpcoes" layoutX="261.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Crie sua Tarefa" />
+      <MenuBar prefHeight="25.0" prefWidth="600.0">
+        <menus>
+          <Menu mnemonicParsing="false">
+            <items>
+                  <MenuItem fx:id="mnCriarTarefa" mnemonicParsing="false" onAction="#handleOnActionCriarTarefa" text="Criar Tarefa" />
+                  <MenuItem mnemonicParsing="false" text="Excluir Tarefa" />
+                  <MenuItem mnemonicParsing="false" text="Tarefas Finalizadas" />
+                  <MenuItem fx:id="consultarTarefa" mnemonicParsing="false" onAction="#handleOnActionConsultarTarefa" text="Consultar Tarefa" />
+            </items>
+               <graphic>
+                  <ImageView fitHeight="19.0" fitWidth="20.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@menu-button-of-three-horizontal-lines.png" />
+                     </image>
+                  </ImageView>
+               </graphic>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </children>
+</Pane>
