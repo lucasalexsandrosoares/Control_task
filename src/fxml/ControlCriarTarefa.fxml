@@ -2,7 +2,6 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.DatePicker?>
-<?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
@@ -10,8 +9,8 @@
 
 <AnchorPane fx:id="txTarefa" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #0083FC;" xmlns="http://javafx.com/javafx/8.0.121" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerCriarTarefa">
    <children>
-      <TextField fx:id="tarefa" layoutX="54.0" layoutY="75.0"  prefHeight="25.0" prefWidth="226.0" />
-      <DatePicker fx:id="date" layoutX="54.0" layoutY="155.0"  prefHeight="25.0" prefWidth="226.0" />
+      <TextField fx:id="tarefa" layoutX="54.0" layoutY="75.0" prefHeight="25.0" prefWidth="226.0" />
+      <DatePicker fx:id="datePicker" layoutX="54.0" layoutY="155.0"  prefHeight="25.0" prefWidth="226.0" />
       <Button fx:id="btnCancelar" layoutX="54.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleOnActionCancelar" prefHeight="25.0" prefWidth="122.0" text="Cancelar" />
       <Button fx:id="btnSalvar" layoutX="409.0" layoutY="331.0" mnemonicParsing="false" onAction="#handleOnActionSalvar" prefHeight="25.0" prefWidth="122.0" text="Salvar" />
       <Text layoutX="54.0" layoutY="140.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Data">
@@ -19,11 +18,11 @@
             <Font size="14.0" />
          </font>
       </Text>
-      <Label layoutX="54.0" layoutY="227.0" text="Hora" />
       <Text layoutX="54.0" layoutY="58.0" strokeType="OUTSIDE" strokeWidth="0.0" text="O que deve ser feito?">
          <font>
             <Font size="14.0" />
          </font>
       </Text>
+      <TextField fx:id="hora" layoutX="54.0" layoutY="241.0" promptText="Hora" />
    </children>
 </AnchorPane>
